@@ -113,19 +113,19 @@ class _ConvertirState extends State<Convertir> {
                 onTap: () => cambiarestadoO("P"),
                 child: Monedas(
                   moneda: pesoO,
-                  texto: 'P',
+                  texto: 'COP',
                 ),
               ),
               GestureDetector(
                 onTap: () => cambiarestadoO("D"),
                 child: Monedas(
                   moneda: dolarO,
-                  texto: "D",
+                  texto: "USD",
                 ),
               ),
               GestureDetector(
                 onTap: () => cambiarestadoO("E"),
-                child: Monedas(moneda: euroO, texto: "E"),
+                child: Monedas(moneda: euroO, texto: "EUR"),
               ),
             ],
           ),
@@ -146,19 +146,19 @@ class _ConvertirState extends State<Convertir> {
                 onTap: () => cambiarestadoD("P"),
                 child: Monedas(
                   moneda: pesoD,
-                  texto: 'P',
+                  texto: 'COP',
                 ),
               ),
               GestureDetector(
                 onTap: () => cambiarestadoD("D"),
                 child: Monedas(
                   moneda: dolarD,
-                  texto: "D",
+                  texto: "USD",
                 ),
               ),
               GestureDetector(
                 onTap: () => cambiarestadoD("E"),
-                child: Monedas(moneda: euroD, texto: "E"),
+                child: Monedas(moneda: euroD, texto: "EUR"),
               ),
             ],
           ),
@@ -240,7 +240,7 @@ class Monedas extends StatelessWidget {
         backgroundColor: moneda ? Colors.purple : Colors.amber[600],
         child: Text(
           texto,
-          style: const TextStyle(color: Colors.white, fontSize: 20),
+          style: const TextStyle(color: Colors.white, fontSize: 10),
         ),
       ),
     );
